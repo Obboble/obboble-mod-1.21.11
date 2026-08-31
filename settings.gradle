@@ -2,9 +2,14 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         maven { url = 'https://maven.neoforged.net/releases' }
+        maven {
+            name = 'ParchmentMC'
+            url = 'https://maven.parchmentmc.org/'}
+
     }
 }
 
 plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+//    id 'org.parchmentmc.librarian.forgegradle' version '2025.12.20'
 }
