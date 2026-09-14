@@ -70,6 +70,9 @@ public class ObbobleMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+//        NeoForge.EVENT_BUS.register(EventHandler.class);
+
+
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
@@ -114,6 +117,7 @@ public class ObbobleMod {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
+
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
     }

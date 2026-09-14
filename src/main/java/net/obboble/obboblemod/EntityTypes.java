@@ -15,6 +15,8 @@ public class EntityTypes {
     public static final DeferredRegister.Entities ENTITY_TYPES =
             DeferredRegister.createEntities(ObbobleMod.MODID);
 
+
+
     public static final Supplier<EntityType<VaguelyNamed>> VAGUELY_NAMED = ENTITY_TYPES.register(
             "vaguely_named",
             () -> EntityType.Builder.of(
@@ -25,7 +27,7 @@ public class EntityTypes {
                     .eyeHeight(0.85f)
                     .immuneTo(Blocks.POWDER_SNOW)
                     .clientTrackingRange(8)
-                    .updateInterval(10)
+                    .updateInterval(2)
                     .build(ResourceKey.create(
                             Registries.ENTITY_TYPE,
                             Identifier.fromNamespaceAndPath("obboblemod", "vaguely_named")

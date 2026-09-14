@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.obboble.obboblemod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TestMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
